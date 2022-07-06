@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int lesson1, lesson2, lesson3, lesson4;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter lesson1 result:");
+        lesson1 = sc.nextInt();
+
+        System.out.println("Please enter lesson2 result:");
+        lesson2 = sc.nextInt();
+
+        System.out.println("Please enter lesson3 result:");
+        lesson3 = sc.nextInt();
+
+        System.out.println("Please enter lesson4 result:");
+        lesson4 = sc.nextInt();
+
+        float result = (lesson1 + lesson2 + lesson3 + lesson4) / 4;
+
+        boolean passOrNot = result > 60;
+        String str= passOrNot ? "Pass ":"Not Pass ";
+        System.out.println("result is:" + result);
+        System.out.println("status is:" + str);
+    }
+}
